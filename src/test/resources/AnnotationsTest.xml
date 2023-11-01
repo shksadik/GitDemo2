@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	
+  <test name="FacebookLogin" enabled="false" >
+	  
+	  <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="com.sadik.Tests.FacebookTest">
+		  <methods>
+			 
+			  <include name="EnterLoginDetails"/>
+			  
+		  </methods>
+      </class>
+    </classes>
+  </test>
+  
+  
+    <test  name="TestGoogle">
+    <classes>
+      <class name="com.sadik.Tests.FirstTest">
+   <methods>
+			  <include name="TestGoogle"/>
+			  
+		  </methods>
+		  </class>
+    </classes>
+  </test> 
+</suite> 
